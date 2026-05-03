@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -20,11 +18,11 @@ public class Book {
     @Column(nullable = false, length = 255)
     private String title;
 
-//    @Column(nullable = false, length = 255)
-//    private Author author;
-//
-//    @Column(nullable = false, length = 255)
-//    private Genre genre;
+    // @Column(nullable = false, length = 255)
+    // private Author author;
+
+    @Column(nullable = false, length = 255)
+    private String genero;
 
     @Column(nullable = false)
     private String descricao;
