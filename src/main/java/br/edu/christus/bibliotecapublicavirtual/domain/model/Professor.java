@@ -24,9 +24,11 @@ public class Professor {
     @Column(nullable = false)
     private String password;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private int serie;
+    private Serie serie;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String materia;
+    private Disciplina disciplina;
 }

@@ -15,13 +15,10 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long isbn;
 
-    @Column(nullable = false, length = 255)
+    @Column(nullable = false)
     private String title;
 
-    // @Column(nullable = false, length = 255)
-    // private Author author;
-
-    @Column(nullable = false, length = 255)
+    @Column(nullable = false)
     private String genero;
 
     @Column(nullable = false)

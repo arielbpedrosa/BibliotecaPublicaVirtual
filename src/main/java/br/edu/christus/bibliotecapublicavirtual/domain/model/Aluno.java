@@ -18,8 +18,9 @@ public class Aluno {
     @Column(nullable = false, length = 255)
     private String name;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private int serie;
+     private Serie serie;
 
     @Column(nullable = false, unique = true)
     private String email;
@@ -27,6 +28,4 @@ public class Aluno {
     @Column(nullable = false)
     private String password;
 
-//    @Column(nullable = false)
-//    private Professor professor;
 }
